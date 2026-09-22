@@ -214,6 +214,12 @@ h1 em{font-style:italic;color:var(--signal)}
 .kit__cell dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:7px}
 .kit__cell dd{font-size:15px;line-height:1.5}
 
+/* ---------- callout ---------- */
+.callout{background:var(--ink);color:var(--paper);border-radius:3px;padding:22px 24px;margin:28px 0}
+.callout__label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--hold);margin-bottom:8px}
+.callout p{font-size:15.5px;line-height:1.62;color:#D9D6CB;max-width:66ch;margin:0}
+.callout b{color:#fff;font-weight:600}
+
 /* ---------- about ---------- */
 .about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(26px,4vw,52px);align-items:start;margin-top:30px}
 .about p{font-size:16.5px;line-height:1.68;color:var(--ink-2);margin-bottom:15px;max-width:60ch}
@@ -460,7 +466,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
 </div>
 
 <div class="wrap contents">
-  <span>Ten sections · open what you need</span>
+  <span>Twelve sections · open what you need</span>
   <button type="button" id="expandAll">Expand all</button>
 </div>
 <nav class="wrap jump" aria-label="Jump to a section">
@@ -470,10 +476,12 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
   <a href="#outside"><b>04</b>What I see</a>
   <a href="#response"><b>05</b>Response system</a>
   <a href="#listening"><b>06</b>Listening</a>
-  <a href="#creators"><b>07</b>Creators</a>
-  <a href="#systems"><b>08</b>Systems</a>
-  <a href="#reporting"><b>09</b>Reporting</a>
-  <a href="#label"><b>10</b>The honest label</a>
+  <a href="#pillars"><b>07</b>Content pillars</a>
+  <a href="#campaigns"><b>08</b>Campaign platforms</a>
+  <a href="#creators"><b>09</b>Creators</a>
+  <a href="#systems"><b>10</b>Systems</a>
+  <a href="#reporting"><b>11</b>Reporting</a>
+  <a href="#label"><b>12</b>The honest label</a>
 </nav>
 
 <!-- ============ 01 ABOUT ============ -->
@@ -702,13 +710,13 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
       <span class="sec__num">04</span>
       <span>
         <span class="sec__ttl">What I see from the outside</span>
-        <span class="sec__hint">Five observations from a customer's vantage point, offered as bets not verdicts.</span>
+        <span class="sec__hint">Six observations from a customer's vantage point, offered as bets not verdicts.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
     <div class="sec__body is-closed" id="s4">
       <p class="eyebrow">04 — What I see from the outside</p>
-      <h2 class="head rise">Five bets, <em>made from the aisle.</em></h2>
+      <h2 class="head rise">Six bets, <em>made from the aisle.</em></h2>
       <p class="lede rise">I have no access to your analytics, your calendar, or anything you've already tried and killed. These are the observations I'd want to test in week one — and I'd expect at least two of them to be wrong.</p>
 
       <div class="cards">
@@ -741,6 +749,12 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
           <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a5 5 0 0 1 5-5h9"/><path d="M15 1.5 18.5 4 15 6.5"/><path d="M20 15a5 5 0 0 1-5 5H6"/><path d="M9 22.5 5.5 20 9 17.5"/></svg>
           <h4>Nothing to subscribe to</h4>
           <p>Short-form rewards series — a format someone recognizes in the first half second. Strong one-off posts don't compound. This is the fastest fixable thing on the list and it costs nothing but consistency.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#C97A12"><span class="card__bar"></span>
+          <span class="card__n">Obs 06</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M6.5 17.5l2.8-2.8M14.7 9.3l2.8-2.8"/></svg>
+          <h4>The Udders haven't hit the daily feed yet</h4>
+          <p>February's relaunch gave the brand real IP — Sir Bovine Cowley, Mooranda, Albert, Grazie — and a stated production partnership with Genre.AI for the creative. That's a strong launch moment, but launch moments end. The open question a social hire should own: does the mascot world become a daily voice, and does "nothing fake" get a plain answer for what's AI-made versus filmed — before a comment section asks first.</p>
         </article>
       </div>
     </div>
@@ -856,7 +870,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
       <span class="sec__num">06</span>
       <span>
         <span class="sec__ttl">Listening, and what it produces</span>
-        <span class="sec__hint">What I'd watch daily, how it gets filtered, and six ideas it would generate.</span>
+        <span class="sec__hint">What I'd watch daily, how it gets filtered, and seven ideas it would generate.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
@@ -920,7 +934,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
         </div>
       </div>
 
-      <h3 class="sub rise" style="margin-top:44px">Six ideas it would produce</h3>
+      <h3 class="sub rise" style="margin-top:44px">Seven ideas it would produce</h3>
       <div class="cards">
         <article class="card rise">
           <span class="card__n">Series</span>
@@ -958,26 +972,143 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
           <h4>The Aisle Report</h4>
           <p>When the category has an ingredient scare or a testing story goes viral, we're the brand that can respond calmly with a label and a third-party purity cert instead of a legal statement. Prepared in advance, published within a day.</p>
         </article>
+        <article class="card rise">
+          <span class="card__n">Series</span>
+          <svg class="mock" viewBox="0 0 300 168" aria-hidden="true"><rect width="300" height="168" fill="#F6F5F1"/><rect x="118" y="14" width="64" height="140" rx="7" fill="#FFFFFF" stroke="#D8D5CB" stroke-width="1.2"/><rect x="139" y="18" width="22" height="3" rx="1.5" fill="#D8D5CB"/><rect x="126" y="30" width="48" height="34" rx="2" fill="#FFFFFF" stroke="#D8D5CB" stroke-width="1.2"/><g fill="#C97A12"><path d="M130 40.5l1.4 2.9 3.2.4-2.3 2.3.5 3.2-2.8-1.5-2.8 1.5.5-3.2-2.3-2.3 3.2-.4z"/><path d="M141 40.5l1.4 2.9 3.2.4-2.3 2.3.5 3.2-2.8-1.5-2.8 1.5.5-3.2-2.3-2.3 3.2-.4z"/><path d="M152 40.5l1.4 2.9 3.2.4-2.3 2.3.5 3.2-2.8-1.5-2.8 1.5.5-3.2-2.3-2.3 3.2-.4z"/></g><g fill="#83888F"><rect x="126" y="70" width="48" height="3" rx="1.5"/><rect x="126" y="78" width="36" height="3" rx="1.5"/></g><circle cx="150" cy="114" r="17" fill="#121417"/><path d="M145.5 106.5l13 7.5-13 7.5z" fill="#F6F5F1"/></svg>
+          <h4>Founder Reads the Reviews</h4>
+          <p>Blake's said in interviews that he reads reviews himself and treats them as product input. Filmed monthly, praise and complaints both, it's the cheapest "nothing fake" proof there is — a documented habit instead of a slogan, with a visible "you said, we changed" follow-up whenever something actually moves.</p>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 07 CREATORS ============ -->
-<section class="block sec" id="creators" style="--accent:#C97A12">
+<!-- ============ 07 CONTENT PILLARS ============ -->
+<section class="block sec" id="pillars" style="--accent:#2B4BFF">
   <div class="wrap">
     <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s7">
       <span class="sec__num">07</span>
+      <span>
+        <span class="sec__ttl">Content pillars</span>
+        <span class="sec__hint">Five pillars I'd post from daily so the feed reads as one voice, not a grab bag.</span>
+      </span>
+      <span class="sec__mark" aria-hidden="true"></span>
+    </button>
+    <div class="sec__body is-closed" id="s7">
+      <p class="eyebrow">07 — Content pillars</p>
+      <h2 class="head rise">Five pillars, <em>not a grab bag.</em></h2>
+      <p class="lede rise">Same rule as the rest of this page: bets, not verdicts. Each of these already has a hook inside what's true about Levels right now — the label, the Udders, the retail footprint, the founder's own habits — so it reads like an extension of the brand, not a bolted-on calendar.</p>
+
+      <div class="cards">
+        <article class="card card--bar rise" style="--accent:#2B4BFF"><span class="card__bar"></span>
+          <span class="card__n">Pillar 01</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5 20 20"/><path d="M7 8.5h6M7 11.5h4"/></svg>
+          <h4>Scoop Some Truth</h4>
+          <p>Ingredient literacy that makes "6–8 ingredients, zero fillers" provable instead of stated. One ingredient a week, read straight off the label, in plain language — what it does, why it's there, what got left out.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#C97A12"><span class="card__bar"></span>
+          <span class="card__n">Pillar 02</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M7 8 5 4M17 8l2-4"/><path d="M9.5 16.5c1 1 4 1 5 0"/><circle cx="9.6" cy="12" r=".7" fill="currentColor" stroke="none"/><circle cx="14.4" cy="12" r=".7" fill="currentColor" stroke="none"/></svg>
+          <h4>The Founding Udders</h4>
+          <p>Sir Bovine Cowley, Mooranda, Albert and Grazie carrying real point-of-view content — reacting to trends and industry nonsense in character, so February's rebrand becomes a daily voice instead of a launch-week memory.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#008A55"><span class="card__bar"></span>
+          <span class="card__n">Pillar 03</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 0 16 0"/><path d="M4 12h16"/><path d="M12 4v6"/><circle cx="12" cy="3.1" r="1" fill="currentColor" stroke="none"/></svg>
+          <h4>Real Tastes Better</h4>
+          <p>Shakes, bakes and recipe remixes that make "real food" tangible day to day — half from the team, half repurposed from customer recipes with credit. Gives the feed texture between the harder truth-telling content.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#C97A12"><span class="card__bar"></span>
+          <span class="card__n">Pillar 04</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.4 7-12a7 7 0 0 0-14 0c0 4.6 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>
+          <h4>Spotted in the Wild</h4>
+          <p>Customer shelf-spot content from Walmart, Target, Costco, H-E-B, Sam's Club — turning a retail expansion most followers don't know about yet into recurring, low-cost social proof.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#2B4BFF"><span class="card__bar"></span>
+          <span class="card__n">Pillar 05</span>
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7 9.5 4.5h5L16 7"/><circle cx="12" cy="13.5" r="3.6"/></svg>
+          <h4>Behind the Herd</h4>
+          <p>Founder and team story, unfiltered — the bootstrapped-since-2016 history and the review-reading habit — balancing the AI-produced brand world with visible, human proof.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CAMPAIGN PLATFORMS ============ -->
+<section class="block sec sec--tint" id="campaigns" style="--accent:#008A55">
+  <div class="wrap">
+    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s8">
+      <span class="sec__num">08</span>
+      <span>
+        <span class="sec__ttl">Campaign platforms</span>
+        <span class="sec__hint">Five swings built to survive past launch day — each hooked into something already true about the brand.</span>
+      </span>
+      <span class="sec__mark" aria-hidden="true"></span>
+    </button>
+    <div class="sec__body is-closed" id="s8">
+      <p class="eyebrow">08 — Campaign platforms</p>
+      <h2 class="head rise">Five ideas built to survive <em>past launch day.</em></h2>
+      <p class="lede rise">Content pillars fill the calendar. These are the bigger swings — each one hooked into something already true about Levels' brand, retail footprint, or news cycle, rather than a generic "engagement campaign."</p>
+
+      <div class="cards">
+        <article class="card card--bar rise" style="--accent:#C97A12"><span class="card__bar"></span>
+          <span class="tag" style="margin-bottom:10px;padding:4px 10px;font-size:10px">Always-on activation</span>
+          <span class="card__n">Campaign 01</span>
+          <h4>Answer the Call</h4>
+          <p>Extends February's "Welcome to the Revolution" language into a recurring device — a weekly challenge from Sir Bovine Cowley, a duet/stitch format for fans, a sticker pack built from the four Udders. The IP already exists; this gives it a heartbeat.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#2B4BFF"><span class="card__bar"></span>
+          <span class="tag" style="margin-bottom:10px;padding:4px 10px;font-size:10px">Interactive / live</span>
+          <span class="card__n">Campaign 02</span>
+          <h4>Send Us the Tub</h4>
+          <p>A crowdsourced version of "Us vs. Them" that keeps its generic-"Them" posture: followers submit a tub, any brand, blurred if needed — the team reads the label live. Participatory instead of another static comparison chart.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#008A55"><span class="card__bar"></span>
+          <span class="tag" style="margin-bottom:10px;padding:4px 10px;font-size:10px">UGC / geo-tagged</span>
+          <span class="card__n">Campaign 03</span>
+          <h4>Shelf Check</h4>
+          <p>Turns the push toward 9,000+ retail doors in 2026 into a scavenger hunt — first-to-spot-us rewards, a market map that lights up as distribution grows, a legitimate reason to coordinate with retail and sales.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#C97A12"><span class="card__bar"></span>
+          <span class="tag" style="margin-bottom:10px;padding:4px 10px;font-size:10px">Founder series</span>
+          <span class="card__n">Campaign 04</span>
+          <h4>Blake Reads the Reviews</h4>
+          <p>Makes a private habit public: a monthly video of the founder reacting to real reviews, good and critical, with a "you said, we changed" follow-up. The single most defensible "nothing fake" proof point available.</p>
+        </article>
+        <article class="card card--bar rise" style="--accent:#2B4BFF"><span class="card__bar"></span>
+          <span class="tag" style="margin-bottom:10px;padding:4px 10px;font-size:10px">Trust / always-on</span>
+          <span class="card__n">Campaign 05</span>
+          <h4>Made by the Herd</h4>
+          <p>A proactive answer to AI-content skepticism — regular "made by the herd" posts spotlighting real farmers, team and production alongside the AI-generated brand-world content, plus a ready response bank if the question comes up in comments.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 CREATORS ============ -->
+<section class="block sec" id="creators" style="--accent:#C97A12">
+  <div class="wrap">
+    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s9">
+      <span class="sec__num">09</span>
       <span>
         <span class="sec__ttl">Creator coordination</span>
         <span class="sec__hint">How inbound gets triaged so the good relationships don't get lost in the volume.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
-    <div class="sec__body is-closed" id="s7">
-      <p class="eyebrow">07 — Creator coordination</p>
+    <div class="sec__body is-closed" id="s9">
+      <p class="eyebrow">09 — Creator coordination</p>
       <h2 class="head rise">The ones you lose <em>are the ones nobody logged.</em></h2>
-      <p class="lede rise">Creator inbound arrives in the same inbox as everything else, which is exactly how promising people get missed. The fix isn't enthusiasm, it's a tracker and a response standard.</p>
+      <p class="lede rise">That's one half of "creators" — the inbound kind, below. The other half is closer to home: Levels is also hiring a dedicated content creator, and from what came up in the interview, Lauren — Strategy Director for Brand &amp; Social — currently owns both strategy and a lot of the execution herself, and this role exists to take the execution part off her plate so she can stay focused on brand and direction.</p>
+
+      <div class="callout rise">
+        <p class="callout__label">From the interview</p>
+        <p>The read I'd bring to that structure: take Lauren's creative brief, turn it into a shot list and a working brief the content creator can actually shoot from, run point on execution day to day, and close the loop with what shipped and how it performed — so the strategy stays hers, the execution stops being a bottleneck she has to carry personally, and she's not relitigating the same brief twice.</p>
+      </div>
+
+      <p class="lede rise" style="margin-top:6px">And separately — the creator-partnership motion this role would also own:</p>
 
       <div class="split">
         <div class="rise">
@@ -1003,19 +1134,19 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
   </div>
 </section>
 
-<!-- ============ 08 SYSTEMS ============ -->
+<!-- ============ 10 SYSTEMS ============ -->
 <section class="block sec sec--tint" id="systems" style="--accent:#2B4BFF">
   <div class="wrap">
-    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s8">
-      <span class="sec__num">08</span>
+    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s10">
+      <span class="sec__num">10</span>
       <span>
         <span class="sec__ttl">Systems I'd build</span>
         <span class="sec__hint">Five unglamorous things that decide whether this scales past one person.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
-    <div class="sec__body is-closed" id="s8">
-      <p class="eyebrow">08 — Systems I'd build</p>
+    <div class="sec__body is-closed" id="s10">
+      <p class="eyebrow">10 — Systems I'd build</p>
       <h2 class="head rise">The part nobody <em>puts in a portfolio.</em></h2>
       <p class="lede rise">Your listing asks for someone who makes the operation "increasingly organized, scalable, and self-sufficient." That's a systems ask, not a content ask. These are the five I'd build first.</p>
 
@@ -1064,19 +1195,19 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
   </div>
 </section>
 
-<!-- ============ 09 REPORTING ============ -->
+<!-- ============ 11 REPORTING ============ -->
 <section class="block sec" id="reporting" style="--accent:#008A55">
   <div class="wrap">
-    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s9">
-      <span class="sec__num">09</span>
+    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s11">
+      <span class="sec__num">11</span>
       <span>
         <span class="sec__ttl">What I'd report</span>
         <span class="sec__hint">The weekly and monthly loop — and the numbers I think actually matter.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
-    <div class="sec__body is-closed" id="s9">
-      <p class="eyebrow">09 — What I'd report</p>
+    <div class="sec__body is-closed" id="s11">
+      <p class="eyebrow">11 — What I'd report</p>
       <h2 class="head rise">Reports that end <em>in a decision.</em></h2>
       <p class="lede rise">I've never been able to treat social as a scoreboard. A post that does big reach and moves nobody toward a first bag is a post I'd want to change. So the reporting is built to change next week's work, not to prove last week's.</p>
 
@@ -1132,19 +1263,19 @@ footer a:hover{color:var(--signal);border-color:var(--signal)}
   </div>
 </section>
 
-<!-- ============ 10 HONEST LABEL ============ -->
+<!-- ============ 12 HONEST LABEL ============ -->
 <section class="block sec sec--tint" id="label" style="--accent:#121417">
   <div class="wrap">
-    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s10">
-      <span class="sec__num">10</span>
+    <button class="sec__toggle" type="button" aria-expanded="false" aria-controls="s12">
+      <span class="sec__num">12</span>
       <span>
         <span class="sec__ttl">The honest label</span>
         <span class="sec__hint">What this is, what it isn't, and what I bring on day one.</span>
       </span>
       <span class="sec__mark" aria-hidden="true"></span>
     </button>
-    <div class="sec__body is-closed" id="s10">
-      <p class="eyebrow">10 — The honest label</p>
+    <div class="sec__body is-closed" id="s12">
+      <p class="eyebrow">12 — The honest label</p>
 
       <div class="honesty rise">
         <h3>The honest label</h3>
